@@ -4,6 +4,7 @@ import Projects from './Projects'
 import Active from './Active'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Customizations from './Customizations'
+import Statistics from './Statistics'
 import {
   StyleSheet
 } from 'react-native'
@@ -19,7 +20,10 @@ export default class Main extends Component {
           <Tab style={styles.main} heading={<TabHeading style={styles.tabBar}><Icon color='#2bcccc' size={25} name='fire' /></TabHeading>}>
             <Active />
           </Tab>
-          <Tab style={styles.main} heading={<TabHeading style={styles.tabBar}><Icon color='#2bcccc' size={25} name='star' /></TabHeading>}>
+          <Tab style={styles.main} heading={<TabHeading style={styles.tabBar}><Icon color='#2bcccc' size={25} name='american-sign-language-interpreting' /></TabHeading>}>
+            <Statistics />
+          </Tab>
+          <Tab style={styles.main} heading={<TabHeading style={styles.tabBar}><Icon color='#2bcccc' size={25} name='plus' /></TabHeading>}>
             <Customizations />
           </Tab>
         </Tabs>
